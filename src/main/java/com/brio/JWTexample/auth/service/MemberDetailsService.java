@@ -45,7 +45,7 @@ public class MemberDetailsService implements UserDetailsService {
         findMember.setMemberId(1L);
         findMember.setEmail("jwt@test.com");
         findMember.setPassword(passwordEncoder.encode("testword"));
-        findMember.setRoles(List.of("USER", "ADMIN"));
+        findMember.setRoles(List.of("USER"));
         return new MemberDetails(findMember);
     }
 

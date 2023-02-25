@@ -61,6 +61,7 @@ public class SecurityConfiguration {
                 .and()
                 .authorizeHttpRequests(authorize -> authorize
                         .antMatchers(HttpMethod.GET, "/hello").hasRole("USER")
+                        .antMatchers(HttpMethod.GET, "/hello/admin").hasRole("ADMIN")
                         .anyRequest().permitAll()
                 );
         return http.build();

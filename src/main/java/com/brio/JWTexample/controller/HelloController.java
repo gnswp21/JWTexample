@@ -14,4 +14,9 @@ public class HelloController {
     public ResponseEntity hello(){
         return new ResponseEntity<>("hello, JWT!", HttpStatus.OK);
     }
+
+    @GetMapping("/admin")
+    public ResponseEntity helloAdmin(){
+        return new ResponseEntity<>("hello, ADMIN!", HttpStatus.OK);
+    }
 }
