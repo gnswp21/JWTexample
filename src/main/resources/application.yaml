@@ -1,0 +1,5 @@
+
+jwt:
+  key: jwtkeyexamplejwtkeyexamplejwtkeyexamplejwtkeyexamplejwtkeyexamplejwtkeyexamplejwtkeyexample
+  access-token-expiration-minutes: 30
+  refresh-token-expiration-minutes: 300
